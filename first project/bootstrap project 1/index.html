@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>iCoder - The Best Coding Blog</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<div id="home"></div>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <div class="container-fluid">
+
+
+            <!-- Logo -->
+       <a class="navbar-brand" href="#">
+    <img src="am logowhite.png.svg" alt="AM logo" class="AM logo" width="100px;">
+</a>
+
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+            >
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- Navbar Content -->
+
+            <div
+                class="collapse navbar-collapse"
+                id="navbarContent"
+            >
+
+
+                <!-- Left Menu -->
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                    <!-- Home -->
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active" href="#home">
+                          Home
+                         </a>
+
+                    </li>
+
+
+                    <!-- About -->
+
+                    <li class="nav-item">
+                     <a class="nav-link" href="#about">
+                      About
+                      </a>
+
+                    </li>
+
+
+                    <!-- Topics -->
+
+                    <li class="nav-item dropdown">
+
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                        >
+                            Topics
+                        </a>
+
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Technology
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Web Development
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#articles">
+                                    Programming
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <!-- Contact -->
+
+                    <li class="nav-item">
+
+                       <a class="nav-link" href="#contact">
+                        Contact Us
+                       </a>
+
+                    </li>
+
+                </ul>
+
+
+                <!-- Right Side -->
+
+                <form class="d-flex search-area">
+
+
+                    <!-- Search Input -->
+
+                    <input
+                        class="form-control search-input"
+                        type="search"
+                        placeholder="Search"
+                    >
+
+
+                    <!-- Search Button -->
+
+                    <button
+                        class="btn btn-light search-btn"
+                        type="submit"
+                    >
+                        Search
+                    </button>
+
+
+                    <!-- Login -->
+
+                    <button
+                        class="btn btn-success login-btn"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#loginModal"
+                    >
+                        Login
+                    </button>
+
+
+                    <!-- SignUp -->
+
+                    <button
+                        class="btn btn-info signup-btn"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#signupModal"
+                    >
+                        SignUp
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         CAROUSEL / SLIDER
+    ========================== -->
+
+    <div
+        id="myCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+    >
+
+
+        <!-- Slider Indicators -->
+
+        <div class="carousel-indicators">
+
+
+            <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="0"
+                class="active"
+            >
+            </button>
+
+
+            <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="1"
+            >
+            </button>
+
+
+            <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="2"
+            >
+            </button>
+
+        </div>
+
+
+
+        <!-- =========================
+             SLIDER ITEMS
+        ========================== -->
+
+        <div class="carousel-inner">
+
+
+            <!-- =========================
+                 SLIDE 1
+            ========================== -->
+
+            <div class="carousel-item active">
+
+                <div class="hero slide-1">
+
+
+                    <div class="hero-content">
+
+                        <h1>
+                            The Best Coding Blog
+                        </h1>
+
+
+                        <p>
+                            Technology News, Development and Trends
+                        </p>
+
+
+                        <button class="btn btn-warning">
+                            Technology
+                        </button>
+
+
+                        <button class="btn btn-primary">
+                            Web Development
+                        </button>
+
+
+                        <button class="btn btn-success">
+                            Tech Fun
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 SLIDE 2
+            ========================== -->
+
+            <div class="carousel-item">
+
+                <div class="hero slide-2">
+
+
+                    <div class="hero-content">
+
+                        <h1>
+                            Artificial Intelligence
+                        </h1>
+
+
+                        <p>
+                            Explore the world of Artificial Intelligence
+                        </p>
+
+
+                        <button class="btn btn-danger">
+                            AI
+                        </button>
+
+
+                        <button class="btn btn-outline-info">
+                            Technology
+                        </button>
+
+
+                        <button class="btn btn-success">
+                            Learn More
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 SLIDE 3
+            ========================== -->
+
+            <div class="carousel-item">
+
+                <div class="hero slide-3">
+
+
+                    <div class="hero-content">
+
+                        <h1>
+                            Programming
+                        </h1>
+
+
+                        <p>
+                            Learn programming and build amazing projects
+                        </p>
+
+
+                        <button class="btn text-white"style="background-color:#fd7e14;">
+                            Programming
+                        </button>
+
+
+                      <button class="btn text-white" style="background-color: #0dcaf0;">
+    Coding
+</button>
+
+
+                        <button class="btn text-white"style="background-color:#6f42c1;">
+                            Tutorials
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             PREVIOUS BUTTON
+        ========================== -->
+
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"
+        >
+
+            <span class="carousel-control-prev-icon"></span>
+
+        </button>
+
+
+
+        <!-- =========================
+             NEXT BUTTON
+        ========================== -->
+
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"
+        >
+
+            <span class="carousel-control-next-icon"></span>
+
+        </button>
+        </div>
+<div id="articles" class="container py-5">
+
+    <!-- Heading -->
+    <div class="text-center mb-5">
+        <span class="section-tag">LATEST ARTICLES</span>
+        <h1 class="blog-heading">AI & Programming</h1>
+        <p class="text-muted">
+            Explore the latest ideas, tools and tutorials in technology.
+        </p>
+    </div>
+
+
+     <!-- Blog Cards -->
+   <div class="row g-4">
+ 
+ 
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6">
+ 
+            <div class="blog-card">
+ 
+                <span class="category">
+                    <i class="bi bi-robot"></i> AI
+                </span>
+ 
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80"
+                         alt="Artificial Intelligence">
+                </div>
+ 
+                <div class="card-content">
+ 
+                    <h3>How Artificial Intelligence Is Changing Our Future</h3>
+ 
+                    <p>
+                        Discover how AI is transforming businesses, software
+                        development and everyday digital experiences.
+                    </p>
+ 
+                    <a href="#" class="read-btn">
+                        READ MORE
+                    </a>
+ 
+                    <div class="card-info">
+                        <span>
+                            <i class="bi bi-calendar3"></i> Sep 10, 2026
+                        </span>
+ 
+                        <span>
+                            <i class="bi bi-clock"></i> 5 min read
+                        </span>
+                    </div>
+ 
+                </div>
+ 
+            </div>
+ 
+        </div>
+ 
+ 
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6">
+ 
+            <div class="blog-card">
+ 
+                <span class="category">
+                    <i class="bi bi-code-slash"></i> Programming
+                </span>
+ 
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=900&q=80"
+                         alt="Programming Code">
+                </div>
+ 
+                <div class="card-content">
+ 
+                    <h3>Modern Programming Skills Every Developer Needs</h3>
+ 
+                    <p>
+                        Learn the essential programming concepts and development
+                        skills that can help you become a better developer.
+                    </p>
+ 
+                    <a href="#" class="read-btn">
+                        READ MORE
+                    </a>
+ 
+                    <div class="card-info">
+                        <span>
+                            <i class="bi bi-calendar3"></i> Sep 08, 2026
+                        </span>
+ 
+                        <span>
+                            <i class="bi bi-clock"></i> 7 min read
+                        </span>
+                    </div>
+ 
+                </div>
+ 
+            </div>
+ 
+        </div>
+ 
+ 
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6">
+ 
+            <div class="blog-card">
+ 
+                <span class="category">
+                    <i class="bi bi-cpu"></i> Machine Learning
+                </span>
+ 
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=80"
+                         alt="Machine Learning">
+                </div>
+ 
+                <div class="card-content">
+ 
+                    <h3>Getting Started With Machine Learning</h3>
+ 
+                    <p>
+                        A beginner-friendly introduction to machine learning,
+                        algorithms, data and intelligent applications.
+                    </p>
+ 
+                    <a href="#" class="read-btn">
+                        READ MORE
+                    </a>
+ 
+                    <div class="card-info">
+                        <span>
+                            <i class="bi bi-calendar3"></i> Sep 05, 2026
+                        </span>
+ 
+                        <span>
+                            <i class="bi bi-clock"></i> 6 min read
+                        </span>
+                    </div>
+ 
+                </div>
+ 
+            </div>
+ 
+        </div>
+ 
+    </div>
+ 
+</div>
+   
+  <!-- =========================
+         FEATURETTES SECTION
+         (Cards ke neeche, image/text alternating rows)
+    ========================== -->
+ 
+    <div id="about" class="container featurette-section py-5">
+ 
+ 
+        <!-- Featurette 1 - image right -->
+ 
+        <div class="row featurette align-items-center">
+ 
+            <div class="col-md-7">
+                <h2 class="featurette-heading">
+                    Built by Developers, <span class="text-muted">for Developers.</span>
+                </h2>
+                <p class="lead">
+                    Every tutorial on iCoder comes from real projects, not
+                    copy-pasted theory. We break down messy, real-world code
+                    into simple steps so you actually understand what you're
+                    building and why it works.
+                </p>
+            </div>
+ 
+            <div class="col-md-5">
+                <img
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+                    class="featurette-image img-fluid"
+                    alt="Developer writing code on laptop"
+                >
+            </div>
+ 
+        </div>
+ 
+ 
+        <hr class="featurette-divider">
+ 
+ 
+        <!-- Featurette 2 - image left -->
+ 
+        <div class="row featurette align-items-center flex-md-row-reverse">
+ 
+            <div class="col-md-7">
+                <h2 class="featurette-heading">
+                    Where Curiosity <span class="text-muted">Meets Code.</span>
+                </h2>
+                <p class="lead">
+                    Whether you're debugging your first "Hello World" or
+                    architecting your next big idea, iCoder keeps things
+                    practical. No fluff, no filler — just clear explanations
+                    written by people who still write code every day.
+                </p>
+            </div>
+ 
+            <div class="col-md-5">
+                <img
+                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80"
+                    class="featurette-image img-fluid"
+                    alt="Team of developers collaborating"
+                >
+            </div>
+ 
+        </div>
+ 
+ 
+        <hr class="featurette-divider">
+ 
+ 
+        <!-- Featurette 3 - image right -->
+ 
+        <div class="row featurette align-items-center">
+ 
+            <div class="col-md-7">
+                <h2 class="featurette-heading">
+                    A Community <span class="text-muted">That Grows Together.</span>
+                </h2>
+                <p class="lead">
+                    iCoder started as one developer's notes and turned into a
+                    place thousands of learners visit every week. Join a
+                    growing community that shares tutorials, tips and honest
+                    advice on becoming a better programmer.
+                </p>
+            </div>
+ 
+            <div class="col-md-5">
+                <img
+                    src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80"
+                    class="featurette-image img-fluid"
+                    alt="Developers in a meeting with laptops"
+                >
+            </div>
+ 
+        </div>
+ 
+    </div>
+<!-- =========================
+         CONTACT US SECTION
+         (Dark themed, unique styled form)
+    ========================== -->
+ 
+
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+    
+ 
+                      
+            <!-- Email Address -->
+           
+ <div id="contact" class="container contact-page py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+ 
+        <h1 class="page-title mb-4">Contact Us</h1>
+ 
+        <form id="contactForm">
+ 
+          <!-- Email address -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+          </div>
+ 
+          <!-- Select your Query -->
+          <div class="mb-3">
+            <label for="query" class="form-label">Select your Query</label>
+            <select class="form-select" id="query">
+              <option value="web">Web</option>
+              <option value="mobile">Mobile App</option>
+              <option value="billing">Billing</option>
+              <option value="general">General</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+ 
+          <!-- Checkboxes -->
+          <div class="mb-2 form-check">
+            <input type="checkbox" class="form-check-input" id="isMember">
+            <label class="form-check-label" for="isMember">Are you a Member?</label>
+          </div>
+ 
+          <div class="mb-2 form-check">
+            <input type="checkbox" class="form-check-input" id="isProfessor">
+            <label class="form-check-label" for="isProfessor">Are you a Professor?</label>
+          </div>
+ 
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="isCoder">
+            <label class="form-check-label" for="isCoder">Are you a Coder?</label>
+          </div>
+ 
+          <!-- Tell us about yourself -->
+          <div class="mb-3">
+            <label for="aboutYou" class="form-label">Tell us about yourself</label>
+            <textarea class="form-control" id="aboutYou" rows="3"></textarea>
+          </div>
+ 
+          <!-- Elaborate Your Concern -->
+          <div class="mb-4">
+            <label for="concern" class="form-label">Elaborate Your Concern</label>
+            <textarea class="form-control" id="concern" rows="3"></textarea>
+          </div>
+ 
+          <button type="submit" class="btn btn-outline-dark px-4">Submit</button>
+ 
+        </form>
+ 
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Footer -->
+  <footer class="site-footer text-center py-3">
+    <span>&copy; 2020-2026 iCoder, Inc.</span>
+    <a href="#" style="text-decoration: none;">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#top" id="backToTop">Back to top</a>
+  </footer>
+
+
+
+    <!-- =========================
+         LOGIN MODAL
+    ========================== -->
+
+    <div class="modal fade auth-modal" id="loginModal" tabindex="-1" aria-labelledby="loginTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <button type="button" class="btn-close auth-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+          <div class="auth-wrapper">
+
+            <!-- Left colourful side -->
+            <div class="auth-side">
+              <h2>Welcome Back!</h2>
+              <p>Login to continue reading tutorials, saving articles and learning with the iCoder community.</p>
+            </div>
+
+            <!-- Form side -->
+            <div class="auth-form">
+              <h3 id="loginTitle">Login</h3>
+              <p class="auth-sub">Sign in to your account</p>
+
+              <form id="loginForm">
+
+                <div class="mb-3">
+                  <label for="loginEmail" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="loginPassword" class="form-label">Password</label>
+                  <div class="password-box">
+                    <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password" required>
+                    <button type="button" class="toggle-pass" data-target="loginPassword">Show</button>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <div class="form-check mb-0">
+                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                  </div>
+                  <a href="#" class="auth-link" onclick="return false;">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="auth-btn">Login</button>
+
+                <div class="auth-msg" role="alert"></div>
+
+              </form>
+
+              <p class="auth-switch">
+                Don't have an account?
+                <a href="#" class="auth-link" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- =========================
+         SIGN UP MODAL
+    ========================== -->
+
+    <div class="modal fade auth-modal signup-modal" id="signupModal" tabindex="-1" aria-labelledby="signupTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <button type="button" class="btn-close auth-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+          <div class="auth-wrapper">
+
+            <!-- Left colourful side -->
+            <div class="auth-side signup-side">
+              <h2>Join iCoder</h2>
+              <p>Create a free account to save your favourite articles, follow topics and be part of a growing developer community.</p>
+            </div>
+
+            <!-- Form side -->
+            <div class="auth-form">
+              <h3 id="signupTitle">Create Account</h3>
+              <p class="auth-sub">It only takes a minute</p>
+
+              <form id="signupForm">
+
+                <div class="mb-3">
+                  <label for="signupName" class="form-label">Full name</label>
+                  <input type="text" class="form-control" id="signupName" placeholder="Your name" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="signupEmail" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="signupEmail" placeholder="name@example.com" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="signupPassword" class="form-label">Password</label>
+                  <div class="password-box">
+                    <input type="password" class="form-control" id="signupPassword" placeholder="At least 6 characters" minlength="6" required>
+                    <button type="button" class="toggle-pass" data-target="signupPassword">Show</button>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="signupConfirm" class="form-label">Confirm password</label>
+                  <div class="password-box">
+                    <input type="password" class="form-control" id="signupConfirm" placeholder="Re-enter your password" required>
+                    <button type="button" class="toggle-pass" data-target="signupConfirm">Show</button>
+                  </div>
+                </div>
+
+                <div class="form-check mb-4">
+                  <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+                  <label class="form-check-label" for="agreeTerms">I agree to the Terms and Privacy Policy</label>
+                </div>
+
+                <button type="submit" class="auth-btn">Sign Up</button>
+
+                <div class="auth-msg" role="alert"></div>
+
+              </form>
+
+              <p class="auth-switch">
+                Already have an account?
+                <a href="#" class="auth-link" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Login / Sign Up script -->
+    <script>
+
+      // Show / Hide password
+      document.querySelectorAll('.toggle-pass').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var input = document.getElementById(btn.getAttribute('data-target'));
+          var show = input.type === 'password';
+          input.type = show ? 'text' : 'password';
+          btn.textContent = show ? 'Hide' : 'Show';
+        });
+      });
+
+      // Message box helper
+      function showMsg(form, text, type) {
+        var box = form.querySelector('.auth-msg');
+        box.textContent = text;
+        box.className = 'auth-msg ' + type;
+      }
+
+      // Login submit
+      document.getElementById('loginForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        showMsg(this, 'Login successful! Welcome back.', 'success');
+      });
+
+      // Sign up submit
+      document.getElementById('signupForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        var pass = document.getElementById('signupPassword').value;
+        var confirm = document.getElementById('signupConfirm').value;
+
+        if (pass !== confirm) {
+          showMsg(this, 'Passwords do not match. Please try again.', 'error');
+          return;
+        }
+
+        showMsg(this, 'Account created successfully! You can login now.', 'success');
+      });
+
+      // Popup band hone par form saaf kar do
+      document.querySelectorAll('.auth-modal').forEach(function (modal) {
+        modal.addEventListener('hidden.bs.modal', function () {
+          var form = modal.querySelector('form');
+          form.reset();
+
+          var box = form.querySelector('.auth-msg');
+          box.className = 'auth-msg';
+          box.textContent = '';
+
+          modal.querySelectorAll('.password-box .form-control').forEach(function (i) {
+            i.type = 'password';
+          });
+          modal.querySelectorAll('.toggle-pass').forEach(function (b) {
+            b.textContent = 'Show';
+          });
+        });
+      });
+
+    </script>
+
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+</body>
+
+</html>

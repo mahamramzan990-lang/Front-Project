@@ -1,0 +1,1099 @@
+/* =========================
+   GENERAL
+========================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background-color: #212934;
+    min-height: 40px;
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+    color: white !important;
+    font-size: 15px;
+}
+
+
+.navbar .nav-link {
+    color: #dddddd !important;
+    font-size: 13px;
+}
+
+
+.navbar .nav-link:hover {
+    color: white !important;
+}
+
+
+
+/* =========================
+   SEARCH AREA
+========================= */
+
+.search-area {
+    gap: 6px;
+}
+
+
+.search-input {
+    width: 135px;
+    height: 30px;
+    font-size: 12px;
+}
+
+
+.search-btn {
+    height: 30px;
+    font-size: 12px;
+    padding: 4px 10px;
+}
+
+
+.login-btn {
+    height: 30px;
+    font-size: 12px;
+    padding: 4px 10px;
+}
+
+
+.signup-btn {
+    height: 30px;
+    font-size: 12px;
+    padding: 4px 10px;
+}
+
+
+
+/* =========================
+   HERO / SLIDER
+========================= */
+
+.hero {
+    height: 390px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+
+/* =========================
+   FIRST IMAGE
+========================= */
+
+.slide-1 {
+    background-image: url("coding\ blog.png");
+}
+
+
+
+/* =========================
+   SECOND IMAGE
+========================= */
+
+.slide-2 {
+    background-image: url("artifical intelligence.jpeg");
+}
+
+
+
+/* =========================
+   THIRD IMAGE
+========================= */
+
+.slide-3 {
+    background-image: url("programming.jpeg");
+}
+
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+
+
+/* =========================
+   HEADING
+========================= */
+
+.hero-content h1 {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* =========================
+   PARAGRAPH
+========================= */
+
+.hero-content p {
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+
+/* =========================
+   SLIDER BUTTONS
+========================= */
+
+.hero-content .btn {
+    font-size: 12px;
+    margin: 2px;
+    padding: 5px 10px;
+}
+
+
+
+/* =========================
+   CAROUSEL INDICATORS
+========================= */
+
+.carousel-indicators {
+    bottom: -2px;
+}
+
+
+.carousel-indicators button {
+    width: 20px;
+    height: 2px;
+}
+
+
+
+/* =========================
+   CAROUSEL ARROWS
+========================= */
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        height: 420px;
+    }
+
+    .hero-content h1 {
+        font-size: 20px;
+    }
+
+    .search-area {
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .search-input {
+        width: 110px;
+    }
+
+}
+
+
+/* Cards Styling */
+/* =========================
+   GENERAL
+========================= */
+
+.blog-card {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 30px 25px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    transition: 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+}
+
+
+/* =========================
+   CATEGORY
+========================= */
+
+.category {
+    color: #198754;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.card-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s ease;
+}
+
+.blog-card:hover .card-image img {
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.card-content h3 {
+    font-size: 20px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #1d2227;
+    margin-bottom: 12px;
+}
+
+.card-content p {
+    color: #6c7280;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   READ BUTTON
+========================= */
+
+.read-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #198754;
+    color: white;
+    text-decoration: none;
+    padding: 10px 26px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    margin-bottom: 16px;
+}
+
+.read-btn:hover {
+    background: #157347;
+    color: white;
+}
+
+
+/* =========================
+   CARD INFO
+========================= */
+
+.card-info {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: #9ca0a6;
+    font-size: 12px;
+}
+
+.card-info i {
+    margin-right: 4px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 767px) {
+
+    .blog-heading {
+        font-size: 32px;
+    }
+
+    .blog-card {
+        max-width: 260px;
+    }
+
+    .card-image {
+        height: 220px;
+    }
+
+    .card-content {
+        padding: 24px 18px 28px;
+    }
+
+    .card-content h3 {
+        font-size: 17px;
+    }
+}
+
+
+/* =========================
+   FEATURETTES SECTION
+   ONLY FONT/STYLING UPDATED
+========================= */
+
+.featurette-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.featurette {
+    padding: 50px 0;
+}
+
+.featurette-heading {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 34px;
+    color: #1d2227;
+    letter-spacing: -0.6px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.featurette-heading .text-muted {
+    font-weight: 400;
+    font-style: italic;
+    color: #6c7280 !important;
+}
+
+.featurette .lead {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.85;
+    color: #5c6169;
+    letter-spacing: 0.15px;
+}
+
+.featurette-image {
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    object-fit: cover;
+}
+
+.featurette-divider {
+    margin: 0;
+    border: none;
+    border-top: 1px solid #e6e8eb;
+}
+
+
+/* =========================
+   RESPONSIVE (featurettes)
+========================= */
+
+@media (max-width: 767px) {
+
+    .featurette {
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    .featurette-heading {
+        font-size: 26px;
+    }
+
+    .featurette .col-md-5 {
+        margin-bottom: 25px;
+    }
+
+    .featurette.flex-md-row-reverse .col-md-5 {
+        margin-bottom: 25px;
+    }
+
+}
+
+
+/* =========================
+   CONTACT US SECTION
+========================= */
+
+.contact-page {
+  max-width: 1140px;
+}
+
+.contact-page form {
+  background-color: #f7f9fc;
+  color: #212529;
+  padding: 3.5rem 4rem;
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+.page-title {
+  font-size: 2.75rem;
+  font-weight: 600;
+  color: #e8c766;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #212529;
+}
+
+.form-control,
+.form-select {
+  background-color: #ffffff;
+  border: 1px solid #cfd6e4;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #e8c766;
+  box-shadow: 0 0 0 0.2rem rgba(232, 199, 102, 0.25);
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+.form-check-input:checked {
+  background-color: #e8c766;
+  border-color: #e8c766;
+}
+
+.btn-outline-dark {
+  border-color: #212529;
+  color: #212529;
+}
+
+.btn-outline-dark:hover {
+  background-color: #e8c766;
+  border-color: #e8c766;
+  color: #212529;
+}
+
+
+/* Footer */
+
+.site-footer {
+  background-color: #0d0d0d;
+  border-top: none;
+  box-shadow: none;
+  font-size: 0.9rem;
+  color: #cfcfcf;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+footer.site-footer a,
+footer.site-footer a:visited,
+footer.site-footer a:link,
+footer.site-footer a:active,
+footer.site-footer a:hover {
+  color: #e8c766 !important;
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  border-bottom: none !important;
+  margin: 0 4px;
+}
+
+
+
+/* =========================================================
+   RESPONSIVE FIXES
+   Sirf choti screens ke liye adjustments hain.
+   Desktop ka look wesa hi rehta hai.
+========================================================= */
+
+
+/* ---------- Safety: kuch bhi screen se bahar na nikle ---------- */
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+/* =========================
+   TABLET + MOBILE  (navbar collapse hone ke waqt)
+   992px se chhoti screens
+========================= */
+
+@media (max-width: 991.98px) {
+
+    .search-area {
+        flex-wrap: wrap;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .search-input {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .search-btn,
+    .login-btn,
+    .signup-btn {
+        flex: 1 1 auto;
+    }
+
+    .navbar .nav-link {
+        padding: 8px 0;
+    }
+
+}
+
+
+
+/* =========================
+   TABLET  (768px - 991px)
+========================= */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* 2 cards ke baad teesra card beech mein aaye */
+    .row.g-4 {
+        justify-content: center;
+    }
+
+    .featurette-heading {
+        font-size: 28px;
+    }
+
+    .featurette .lead {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+}
+
+
+
+/* =========================
+   MOBILE  (767px aur us se chhoti)
+========================= */
+
+@media (max-width: 767px) {
+
+    /* Hero text kinaron se na chipke */
+    .hero-content {
+        padding: 0 12px 4px;
+    }
+
+    /* Cards: image gol hi rahe (pehle yahan oval ho jati thi) */
+    .card-image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .blog-card {
+        max-width: 340px;
+        padding: 26px 20px 24px;
+    }
+
+    /* Featurette: text aur image ke beech gap */
+    .featurette .col-md-7 {
+        margin-bottom: 20px;
+    }
+
+    /* Contact form */
+    .contact-page form {
+        padding: 2rem 1.5rem;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+}
+
+
+
+/* =========================
+   SMALL PHONES  (575px aur us se chhoti)
+========================= */
+
+@media (max-width: 575.98px) {
+
+    .navbar-brand img {
+        width: 80px;
+        height: auto;
+    }
+
+    .hero-content h1 {
+        font-size: 18px;
+    }
+
+    .hero-content p {
+        font-size: 11.5px;
+    }
+
+    .hero-content .btn {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+
+    .blog-heading {
+        font-size: 28px;
+    }
+
+    .featurette {
+        padding: 24px 0;
+    }
+
+    .featurette-heading {
+        font-size: 23px;
+    }
+
+    .featurette .lead {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .contact-page form {
+        padding: 1.5rem 1rem;
+    }
+
+    .page-title {
+        font-size: 1.75rem;
+    }
+
+    .contact-page .btn {
+        width: 100%;
+    }
+
+    .site-footer {
+        font-size: 0.8rem;
+        line-height: 1.8;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+
+
+
+/* =========================================================
+   LOGIN / SIGN UP POPUP
+   Colours home page se match:
+   navy #212934 (navbar), green (Login button), cyan (SignUp button)
+========================================================= */
+
+.auth-modal .modal-dialog {
+    max-width: 820px;
+}
+
+.auth-modal .modal-content {
+    position: relative;
+    border: none;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(33, 41, 52, 0.45);
+}
+
+
+/* Close button */
+
+.auth-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+    padding: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    opacity: 1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Layout */
+
+.auth-wrapper {
+    display: flex;
+    min-height: 500px;
+}
+
+
+/* Left side  (Login = navy + green) */
+
+.auth-side {
+    flex: 0 0 40%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 32px;
+    color: #ffffff;
+    background: linear-gradient(150deg, #212934 0%, #244038 55%, #198754 100%);
+}
+
+/* Left side  (Sign Up = navy + cyan) */
+
+.auth-side.signup-side {
+    background: linear-gradient(150deg, #212934 0%, #1f3d52 55%, #0dcaf0 100%);
+}
+
+.auth-side::before,
+.auth-side::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.auth-side::before {
+    width: 180px;
+    height: 180px;
+    top: -60px;
+    left: -60px;
+}
+
+.auth-side::after {
+    width: 220px;
+    height: 220px;
+    bottom: -90px;
+    right: -80px;
+}
+
+.auth-side h2,
+.auth-side p {
+    position: relative;
+    z-index: 1;
+}
+
+.auth-side h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* Heading ke neeche chhoti coloured line */
+
+.auth-side h2::after {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 4px;
+    border-radius: 4px;
+    background: #20c997;
+    margin: 12px auto 0;
+}
+
+.auth-side.signup-side h2::after {
+    background: #0dcaf0;
+}
+
+.auth-side p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+    opacity: 0.95;
+}
+
+
+/* Form side */
+
+.auth-form {
+    flex: 1;
+    padding: 44px 40px 36px;
+    background: #ffffff;
+}
+
+.auth-form h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #212934;
+    margin-bottom: 4px;
+}
+
+.auth-sub {
+    color: #6c7280;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+
+/* Inputs */
+
+.auth-modal .form-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #3d4450;
+    margin-bottom: 6px;
+}
+
+.auth-modal .form-control {
+    height: 46px;
+    padding: 0 14px;
+    font-size: 14px;
+    border-radius: 12px;
+    background-color: #f6f7fb;
+    border: 1px solid #e3e6ef;
+}
+
+.auth-modal .form-control:focus {
+    background-color: #ffffff;
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.18);
+}
+
+.signup-modal .form-control:focus {
+    border-color: #0dcaf0;
+    box-shadow: 0 0 0 0.2rem rgba(13, 202, 240, 0.25);
+}
+
+
+/* Show / Hide password */
+
+.password-box {
+    position: relative;
+}
+
+.password-box .form-control {
+    padding-right: 64px;
+}
+
+.toggle-pass {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    padding: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #198754;
+    cursor: pointer;
+}
+
+.signup-modal .toggle-pass {
+    color: #087990;
+}
+
+
+/* Checkbox */
+
+.auth-modal .form-check-label {
+    font-size: 13px;
+    color: #6c7280;
+}
+
+.auth-modal .form-check-input:checked {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.signup-modal .form-check-input:checked {
+    background-color: #0aa2c0;
+    border-color: #0aa2c0;
+}
+
+.auth-modal .form-check-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.2);
+    border-color: #198754;
+}
+
+.signup-modal .form-check-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(13, 202, 240, 0.25);
+    border-color: #0dcaf0;
+}
+
+
+/* Links */
+
+.auth-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: #198754;
+    text-decoration: none;
+}
+
+.auth-link:hover {
+    color: #146c43;
+    text-decoration: underline;
+}
+
+.signup-modal .auth-link {
+    color: #087990;
+}
+
+.signup-modal .auth-link:hover {
+    color: #055160;
+}
+
+.auth-switch {
+    text-align: center;
+    font-size: 13px;
+    color: #6c7280;
+    margin: 18px 0 0;
+}
+
+
+/* Main button  (Login = green, jaisa navbar ka Login button) */
+
+.auth-btn {
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #198754;
+    box-shadow: 0 8px 20px rgba(25, 135, 84, 0.35);
+    transition: 0.3s ease;
+}
+
+.auth-btn:hover {
+    background: #157347;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(25, 135, 84, 0.45);
+}
+
+/* Main button  (Sign Up = cyan, jaisa navbar ka SignUp button) */
+
+.signup-modal .auth-btn {
+    color: #212934;
+    background: #0dcaf0;
+    box-shadow: 0 8px 20px rgba(13, 202, 240, 0.4);
+}
+
+.signup-modal .auth-btn:hover {
+    background: #31d2f2;
+    box-shadow: 0 12px 26px rgba(13, 202, 240, 0.5);
+}
+
+
+/* Success / error message */
+
+.auth-msg {
+    display: none;
+    margin-top: 14px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.auth-msg.success {
+    display: block;
+    background: #e6f9ee;
+    color: #146c43;
+}
+
+.auth-msg.error {
+    display: block;
+    background: #fdecec;
+    color: #b02a37;
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+    .auth-modal .modal-dialog {
+        max-width: 440px;
+    }
+
+    .auth-wrapper {
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    .auth-side {
+        flex: none;
+        padding: 26px 20px 22px;
+    }
+
+    .auth-side h2 {
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+
+    .auth-side h2::after {
+        margin-top: 8px;
+    }
+
+    .auth-side p {
+        display: none;
+    }
+
+    .auth-form {
+        padding: 26px 22px;
+    }
+
+}
